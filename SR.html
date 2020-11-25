@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Search &amp; Rescue</title>
+	<link href="SR.css" rel="stylesheet" type="text/css" >
+	<script type="text/javascript" src="SR.js"></script>
+</head>
+<body>
+	<h2 class="center">Search &amp; Rescue Simulation</h2>
+	<div class="center">
+		<label>Radar range</label>
+		<input id="radar" value="20" type="text" />
+		<div>
+		<label>Canvas Height</label>
+		<input id="canvasheight" value="300" type="text" />
+	</div>
+	<div>
+		<label>Canvas Width</label>
+		<input id="canvaswidth" value="450" type="text" />
+	</div>
+		<button onclick="start();">Start</button>
+	</div>
+	<hr />
+	<canvas id="searchArea" width="450" height="300"></canvas>
+	<hr />
+	<div class="center">
+		<div class="progress">
+	<label>Elapsed time:</label>
+	<span id="elapsed">0</span>
+Distance to target: 	<span id="distance">0</span>
+		</div>
+	</div>
+</body>
+</html>
